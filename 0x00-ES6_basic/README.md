@@ -4,6 +4,12 @@
 ## Author's Details
 Name: mwihoti.
 
+==
+ES6 Basics
+ECMAScript is object-based: basic language and host facilities are provided by objects, and an ECMAScript program is a cluster of communicating objects.
+
+
+
 
 ### Requirements
 JavaScript Scripts
