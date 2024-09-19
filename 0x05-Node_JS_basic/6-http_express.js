@@ -8,3 +8,4 @@ app.get('/', (req, res) => {
 app.listen(1245, () => {
   console.log('Server running');
 });
+module.exports = app;
