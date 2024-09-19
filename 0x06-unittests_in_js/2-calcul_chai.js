@@ -1,6 +1,4 @@
-export default function calculateNumber (type, a, b) {
-
-
+function calculateNumber (type, a, b) {
     if (type === 'SUM') {
         return Math.round(a) + Math.round(b);
       }
@@ -11,4 +9,5 @@ export default function calculateNumber (type, a, b) {
         return Math.round(b) === 0 ? 'Error' : Math.round(a) / Math.round(b);
       }
       return 0;
-}
+};
+module.exports = calculateNumber;
