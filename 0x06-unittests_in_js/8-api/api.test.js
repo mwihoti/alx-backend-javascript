@@ -13,4 +13,10 @@ describe('API integration test', () => {
         done();
       });
   });
+  it('GET / returns correct result', (done) => {
+    request(app)
+      .get('/')
+      .expect(200)
+      .expect('Welcome to the payment system', done);
+  });
 });
