@@ -1,8 +1,8 @@
 const request = require('supertest');
-const app = require('./api');
+const app = require('./api');  // Ensure the correct path to api.js is used
 const { expect } = require('chai');
 
-describe('API integration test', () => {
+describe('Index page', () => {
   it('GET / returns correct response', (done) => {
     request(app)
       .get('/')
@@ -12,11 +12,5 @@ describe('API integration test', () => {
         expect(res.text).to.equal('Welcome to the payment system');
         done();
       });
-  });
-  it('GET / returns correct result', (done) => {
-    request(app)
-      .get('/')
-      .expect(200)
-      .expect('Welcome to the payment system', done);
   });
 });
