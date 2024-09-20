@@ -2,23 +2,13 @@ const request = require('supertest');
 const app = require('./api');
 const { expect } = require('chai');
 
-describe('Index Page', () => {
-  it('Correct status code?', (done) => {
-    request(app)
-      .get('/')
-      .expect(200)
-      .end((err, res) => {
-        if (err) return done(err);
-        expect(res.status).to.equal(200);
-        done();
-      });
-  });
-
-  it('Correct result?', (done) => {
+describe('API integration test', () => {
+  it('GET / returns correct response', (done) => {
     request(app)
       .get('/')
       .end((err, res) => {
         if (err) return done(err);
+        expect(res.statusCode).to.equal(200);
         expect(res.text).to.equal('Welcome to the payment system');
         done();
       });
