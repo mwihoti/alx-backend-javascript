@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "chai": "^5.1.1",
-    "mocha": "^10.7.3",
+    "mocha": "^11.8.0",
     "sinon": "^19.0.2"
   },
   "scripts": {
@@ -15,11 +15,11 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint": "^10.8.1",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
-    "mocha": "^6.2.2",
+    "mocha": "^11.8.0",
     "nodemon": "^2.0.2",
     "request": "^2.88.0",
     "sinon": "^7.5.0"
